@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#edf4ff">
+  <meta name="description" content="A companion resource hub for researchers who want to use social media purposefully, ethically, and sustainably for research impact.">
+  <meta property="og:title" content="Social Media for Research Impact - Resource Hub">
+  <meta property="og:description" content="Explore the workshop, Compass Canvas, AI Social Media Coach, companion book, and workshop team.">
+  <title>Social Media for Research Impact - Resource Hub</title>
+  <style>html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden;background:#edf4ff}</style>
+</head>
+<body>
+<div id="smri-hub" class="smri-hub">
+  <img id="smriRippleSource" class="smri-bg-fallback" src="ripple-bg.webp" alt="" aria-hidden="true">
+  <canvas id="smriRippleCanvas" class="smri-ripple-canvas" aria-hidden="true"></canvas>
+  <div class="smri-wash" aria-hidden="true"></div>
+
+  <header class="smri-nav-wrap">
+    <nav class="smri-nav smri-shell" aria-label="Resource Hub navigation">
+      <a class="smri-brand" href="#smri-top" aria-label="Social Media for Research Impact Resource Hub">
+        <span class="smri-brand-orb" aria-hidden="true"><span></span></span>
+        <span>Research Impact Hub<small>Make the right ripples</small></span>
+      </a>
+      <button class="smri-menu-btn" id="smriMenuBtn" aria-expanded="false" aria-controls="smriNavLinks" aria-label="Open navigation">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="smri-nav-links" id="smriNavLinks">
+        <a href="#smri-workshop">Workshop</a>
+        <a href="#smri-tools">Tools</a>
+        <a href="#smri-book">Book</a>
+        <a href="#smri-team">Team</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="smri-top">
+    <section class="smri-hero smri-shell">
+      <div class="smri-hero-inner smri-reveal">
+        <div class="smri-eyebrow"><span></span>Social Media for Research Impact</div>
+        <h1>Make your research create <em>the right ripples.</em></h1>
+        <p>A companion resource hub for researchers who want to use social media purposefully, ethically, and sustainably. Clarify your strategy, shape your public presence, and turn research into meaningful connection and impact.</p>
+        <a class="smri-scroll-cue" href="#smri-workshop">
+          Explore the workshop and resources
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="smri-section smri-shell" id="smri-workshop">
+      <div class="smri-workshop-panel smri-glass smri-reveal">
+        <div class="smri-workshop-copy">
+          <div class="smri-kicker">The Workshop</div>
+          <h2>A strategy lab for purposeful academic openness.</h2>
+          <p><strong>Social Media for Research Impact: Developing Purposeful Strategies for Academic Openness</strong> is an interactive workshop for researchers across disciplines, career stages, and levels of social media experience.</p>
+          <p>Rather than treating visibility or follower counts as ends in themselves, the workshop helps participants make deliberate choices about whether, where, and how social media can support their scholarly goals and broader research impact. Through concise inputs, reflection, peer exchange, and hands-on activities, participants develop a strategy that fits their audience, values, available time, and preferred level of visibility.</p>
+          <blockquote>There is no single right way to be visible. The aim is to develop the right strategy for you.</blockquote>
+        </div>
+        <div class="smri-outcomes" aria-label="Workshop outcomes">
+          <article><span>01</span><div><h3>Clarify</h3><p>Define what meaningful research impact looks like for you.</p></div></article>
+          <article><span>02</span><div><h3>Shape</h3><p>Develop a personalized and values-consistent social media strategy.</p></div></article>
+          <article><span>03</span><div><h3>Act</h3><p>Leave with concrete next steps and a sustainable way forward.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="smri-section smri-shell" id="smri-tools">
+      <div class="smri-section-head smri-reveal">
+        <div class="smri-kicker">Workshop Tools</div>
+        <h2>Turn reflection into action.</h2>
+        <p>These two tools help you capture your strategy, test your choices, and continue working after the session.</p>
+      </div>
+
+      <div class="smri-tool-grid">
+        <article class="smri-tool-card smri-glass smri-reveal">
+          <a class="smri-tool-bubble smri-compass-bubble" href="https://compass-canvas-workshop.attabik.chatgpt.site/" target="_blank" rel="noopener" aria-label="Open the Compass Canvas">
+            <svg viewBox="0 0 240 240" role="img" aria-label="Compass illustration">
+              <defs>
+                <radialGradient id="smriCompassOrb" cx="35%" cy="25%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity=".92"/><stop offset=".32" stop-color="#8de4ff" stop-opacity=".9"/><stop offset=".64" stop-color="#6c5cff" stop-opacity=".88"/><stop offset="1" stop-color="#39116f" stop-opacity=".96"/></radialGradient>
+                <linearGradient id="smriNeedle" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff4a4"/><stop offset=".52" stop-color="#ff8672"/><stop offset="1" stop-color="#9a34d2"/></linearGradient>
+                <filter id="smriSoftGlow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <circle cx="120" cy="120" r="92" fill="url(#smriCompassOrb)"/>
+              <circle cx="120" cy="120" r="70" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>
+              <circle cx="120" cy="120" r="48" fill="none" stroke="#fff" stroke-opacity=".34" stroke-width="1.5" stroke-dasharray="4 8"/>
+              <g stroke="#fff" stroke-linecap="round" stroke-opacity=".82"><path d="M120 34v11M120 195v11M34 120h11M195 120h11" stroke-width="4"/><path d="M59 59l8 8M173 173l8 8M181 59l-8 8M67 173l-8 8" stroke-width="3"/></g>
+              <g filter="url(#smriSoftGlow)"><path d="M145 83l-14 48-48 26 20-54 42-20Z" fill="url(#smriNeedle)"/><path d="M95 149l16-39 34-27-14 48-36 18Z" fill="#fff" fill-opacity=".74"/></g>
+              <circle cx="120" cy="120" r="9" fill="#fff"/><circle cx="120" cy="120" r="4" fill="#5f35b5"/>
+            </svg>
+          </a>
+          <div class="smri-tool-copy">
+            <div class="smri-tool-label">Interactive strategy canvas</div>
+            <h3>Compass Canvas</h3>
+            <p>Turn workshop reflection into a clear, downloadable strategy. Capture your priorities, make your choices explicit, and revisit the canvas as your research, audience, or goals evolve.</p>
+            <a class="smri-button smri-button-primary" href="https://compass-canvas-workshop.attabik.chatgpt.site/" target="_blank" rel="noopener">Open the Compass Canvas <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="smri-tool-card smri-glass smri-reveal">
+          <a class="smri-tool-bubble smri-ai-bubble" href="https://chatgpt.com/g/g-6a463f9352388191a879f2f269926566-researcher-s-social-media-coach" target="_blank" rel="noopener" aria-label="Open the AI Social Media Coach">
+            <svg viewBox="0 0 240 240" role="img" aria-label="AI coaching illustration">
+              <defs>
+                <radialGradient id="smriAiOrb" cx="32%" cy="23%" r="78%"><stop offset="0" stop-color="#fff" stop-opacity=".96"/><stop offset=".28" stop-color="#ffcb85" stop-opacity=".88"/><stop offset=".58" stop-color="#d45bd4" stop-opacity=".9"/><stop offset="1" stop-color="#45227c" stop-opacity=".97"/></radialGradient>
+                <linearGradient id="smriAiLine" x1="0" x2="1"><stop stop-color="#fff8b2"/><stop offset="1" stop-color="#94ecff"/></linearGradient>
+                <filter id="smriAiGlow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <circle cx="120" cy="120" r="92" fill="url(#smriAiOrb)"/>
+              <path d="M67 76h106a20 20 0 0 1 20 20v55a20 20 0 0 1-20 20h-46l-33 25 8-25H67a20 20 0 0 1-20-20V96a20 20 0 0 1 20-20Z" fill="#17113e" fill-opacity=".56" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>
+              <g stroke="url(#smriAiLine)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#smriAiGlow)"><path d="M80 126l23-22 22 19 32-29"/><path d="M80 146h73"/></g>
+              <g fill="#fff" filter="url(#smriAiGlow)"><circle cx="80" cy="126" r="6"/><circle cx="103" cy="104" r="6"/><circle cx="125" cy="123" r="6"/><circle cx="157" cy="94" r="6"/></g>
+              <path d="M166 54l4 12 12 4-12 4-4 12-4-12-12-4 12-4 4-12Z" fill="#fff8bf" filter="url(#smriAiGlow)"/>
+            </svg>
+          </a>
+          <div class="smri-tool-copy">
+            <div class="smri-tool-label">Guided AI strategy support</div>
+            <h3>AI Social Media Coach</h3>
+            <p>Stress-test your strategy, translate research for different audiences, and draft or refine content while retaining accuracy, judgment, and scholarly voice. The coach is designed to support your thinking, not replace it.</p>
+            <a class="smri-button smri-button-secondary" href="https://chatgpt.com/g/g-6a463f9352388191a879f2f269926566-researcher-s-social-media-coach" target="_blank" rel="noopener">Open the AI Coach <span>↗</span></a>
+            <small>ChatGPT sign-in may be required. Do not enter confidential or sensitive material.</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="smri-section smri-shell" id="smri-book">
+      <div class="smri-book-panel smri-glass smri-reveal">
+        <div class="smri-book-visual">
+          <div class="smri-book-shadow"></div>
+          <img src="book-cover.webp" alt="Cover of Social Media for Research Impact by Marcel Bogers and Mike Young">
+        </div>
+        <div class="smri-book-copy">
+          <div class="smri-kicker">The Companion Book</div>
+          <h2>Social Media for Research Impact</h2>
+          <h3>How Scholars Can Share Ideas, Build Networks, and Make a Difference</h3>
+          <p>Written by <strong>Marcel Bogers and Mike Young</strong>, this practical and reflective Routledge guide helps researchers use social media in ways that align with their scholarly goals, working style, ethical values, and available resources.</p>
+          <p>Drawing on cases from researchers around the world, the book explores how social media can support collaboration, audience engagement, community-building, knowledge exchange, and real-world impact, without reducing academic life to constant self-promotion.</p>
+          <div class="smri-book-meta"><span>Routledge</span><span>2026</span><span>For researchers at every career stage</span></div>
+          <div class="smri-button-row">
+            <a class="smri-button smri-button-primary" href="https://www.routledge.com/Social-Media-for-Research-Impact-How-Scholars-Can-Share-Ideas-Build-Networks-and-Make-a-Difference/Bogers-Young/p/book/9781032964072" target="_blank" rel="noopener">View the book at Routledge <span>↗</span></a>
+            <a class="smri-text-link" href="https://www.marcelbogers.com/social-media-book-1" target="_blank" rel="noopener">Read more on Marcel's website <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="smri-section smri-shell" id="smri-team">
+      <div class="smri-section-head smri-reveal">
+        <div class="smri-kicker">Workshop Team</div>
+        <h2>Research, impact, and responsible AI.</h2>
+        <p>The workshop brings together expertise in academic openness, open and collaborative innovation, research impact, and responsible applications of generative AI.</p>
+      </div>
+      <div class="smri-team-grid">
+        <article class="smri-person smri-glass smri-reveal">
+          <div class="smri-person-photo"><img src="marcel.webp" alt="Portrait of Marcel Bogers"></div>
+          <div class="smri-person-copy">
+            <h3>Marcel Bogers</h3>
+            <div class="smri-person-role">Professor of Open &amp; Collaborative Innovation</div>
+            <p>Marcel is Full Professor at Eindhoven University of Technology and a Research Fellow at the University of California, Berkeley. His work focuses on open innovation, innovation ecosystems, and creating real-world impact from research. He is co-author of <em>Social Media for Research Impact</em>.</p>
+            <div class="smri-profile-links">
+              <a href="https://www.linkedin.com/in/bogers/" target="_blank" rel="noopener" aria-label="Marcel Bogers on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.2H3.2V21h3.3V8.2ZM4.9 3A1.9 1.9 0 1 0 5 6.8 1.9 1.9 0 0 0 4.9 3ZM21 13.7c0-3.9-2.1-5.7-4.9-5.7a4.2 4.2 0 0 0-3.8 2.1V8.2H9V21h3.3v-6.3c0-1.7.3-3.3 2.4-3.3s2.1 1.9 2.1 3.4V21H21v-7.3Z"/></svg>LinkedIn</a>
+              <a href="https://www.tue.nl/en/research/researchers/marcel-bogers" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 8l10 5 8-4v6h2V8L12 3Zm-6 9v5c0 2.2 3 4 6 4s6-1.8 6-4v-5l-6 3-6-3Z"/></svg>Research profile</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="smri-person smri-glass smri-reveal">
+          <div class="smri-person-photo"><img src="attabik.webp" alt="Portrait of Attabik Awan"></div>
+          <div class="smri-person-copy">
+            <h3>Attabik Awan</h3>
+            <div class="smri-person-role">Researcher in Collaborative &amp; Open Innovation</div>
+            <p>Attabik is a researcher at Tilburg University. He studies why multi-actor collaborations for innovation succeed or become trapped in cycles of delay and fragmentation. He also designs and delivers workshops on responsible generative AI for academic research and education.</p>
+            <div class="smri-profile-links">
+              <a href="https://www.linkedin.com/in/attabikawan/" target="_blank" rel="noopener" aria-label="Attabik Awan on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.2H3.2V21h3.3V8.2ZM4.9 3A1.9 1.9 0 1 0 5 6.8 1.9 1.9 0 0 0 4.9 3ZM21 13.7c0-3.9-2.1-5.7-4.9-5.7a4.2 4.2 0 0 0-3.8 2.1V8.2H9V21h3.3v-6.3c0-1.7.3-3.3 2.4-3.3s2.1 1.9 2.1 3.4V21H21v-7.3Z"/></svg>LinkedIn</a>
+              <a href="https://www.tilburguniversity.edu/staff/a-awan" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 8l10 5 8-4v6h2V8L12 3Zm-6 9v5c0 2.2 3 4 6 4s6-1.8 6-4v-5l-6 3-6-3Z"/></svg>Research profile</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="smri-footer smri-shell">
+    <span>© <span id="smriYear"></span> Social Media for Research Impact Resource Hub</span>
+    <span>Purposeful academic openness, designed for reflection and action</span>
+  </footer>
+</div>
+
+<style>
+  #smri-hub, #smri-hub * { box-sizing: border-box; }
+  #smri-hub {
+    --ink:#13213d; --ink-soft:#42516d; --navy:#172858; --blue:#315fe7; --violet:#7b3fc6;
+    --peach:#e48768; --paper:rgba(255,255,255,.72); --paper-strong:rgba(255,255,255,.9);
+    --line:rgba(255,255,255,.68); --shadow:0 25px 80px rgba(22,37,74,.17);
+    --radius-xl:34px; --radius-lg:26px; --max:1180px;
+    position:relative; isolation:isolate; width:100vw; margin-left:calc(50% - 50vw); min-height:100vh;
+    overflow:hidden; color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:16px; line-height:1.65; background:#edf4ff;
+  }
+  #smri-hub a { color:inherit; }
+  #smri-hub h1,#smri-hub h2,#smri-hub h3,#smri-hub p { margin-top:0; }
+  #smri-hub h1,#smri-hub h2,#smri-hub h3 { line-height:1.06; letter-spacing:-.045em; }
+  .smri-bg-fallback,.smri-ripple-canvas,.smri-wash { position:fixed; inset:0; width:100vw; height:100vh; pointer-events:none; }
+  .smri-bg-fallback { z-index:-4; object-fit:cover; object-position:center center; transform:scale(1.04); }
+  .smri-ripple-canvas { z-index:-3; opacity:0; transition:opacity .8s ease; }
+  .smri-ripple-canvas.smri-ready { opacity:1; }
+  .smri-wash { z-index:-2; background:
+      radial-gradient(circle at 50% 16%,rgba(255,255,255,.16),rgba(255,255,255,.38) 36%,rgba(245,249,255,.68) 77%,rgba(239,246,255,.85)),
+      linear-gradient(180deg,rgba(239,248,255,.14),rgba(252,248,255,.55) 49%,rgba(240,247,255,.82));
+    backdrop-filter:saturate(1.05);
+  }
+  .smri-shell { width:min(calc(100% - 38px),var(--max)); margin-inline:auto; }
+  .smri-nav-wrap { position:sticky; top:0; z-index:50; padding:16px 0; }
+  .smri-nav { display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:66px; padding:10px 14px 10px 18px;
+    border:1px solid rgba(255,255,255,.74); border-radius:22px; background:rgba(255,255,255,.66); backdrop-filter:blur(22px) saturate(1.25);
+    box-shadow:0 12px 36px rgba(29,52,95,.11); }
+  .smri-brand { display:inline-flex; align-items:center; gap:11px; text-decoration:none; font-weight:850; letter-spacing:-.02em; }
+  .smri-brand small { display:block; color:var(--ink-soft); font-size:.69rem; letter-spacing:.03em; font-weight:650; }
+  .smri-brand-orb { width:40px; height:40px; display:grid; place-items:center; border-radius:14px;
+    background:radial-gradient(circle at 30% 24%,#fff 0 5%,#88e0ff 18%,#6b55e6 58%,#e18461 100%); box-shadow:0 10px 24px rgba(62,69,181,.28); }
+  .smri-brand-orb span { width:21px; height:11px; border:2px solid rgba(255,255,255,.9); border-radius:50%; box-shadow:0 0 0 4px rgba(255,255,255,.16); }
+  .smri-nav-links { display:flex; align-items:center; gap:4px; }
+  .smri-nav-links a { text-decoration:none; font-size:.91rem; font-weight:760; padding:10px 13px; border-radius:12px; color:#263757; }
+  .smri-nav-links a:hover,.smri-nav-links a:focus-visible { background:rgba(45,83,167,.09); outline:none; }
+  .smri-menu-btn { display:none; width:43px; height:43px; border:0; border-radius:13px; background:rgba(31,62,125,.08); color:var(--ink); cursor:pointer; }
+  .smri-menu-btn svg { width:21px; fill:none; stroke:currentColor; stroke-width:2; }
+  .smri-hero { min-height:760px; display:grid; place-items:center; padding:96px 0 116px; text-align:center; }
+  .smri-hero-inner { max-width:1020px; }
+  .smri-eyebrow,.smri-kicker { font-size:.76rem; font-weight:880; letter-spacing:.16em; text-transform:uppercase; color:#284579; }
+  .smri-eyebrow { display:inline-flex; align-items:center; gap:10px; margin-bottom:24px; padding:9px 14px; border:1px solid rgba(255,255,255,.74); border-radius:999px; background:rgba(255,255,255,.58); backdrop-filter:blur(14px); box-shadow:0 9px 24px rgba(37,63,113,.08); }
+  .smri-eyebrow span { width:8px; height:8px; border-radius:50%; background:#315fe7; box-shadow:0 0 0 5px rgba(49,95,231,.12); }
+  .smri-hero h1 { margin:0; font-size:clamp(3.6rem,8.7vw,7.8rem); font-weight:900; max-width:1050px; }
+  .smri-hero h1 em { font-style:normal; background:linear-gradient(100deg,#173e9b 0%,#6a2fa9 48%,#c8693b 88%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .smri-hero p { max-width:830px; margin:28px auto 32px; color:#2e4162; font-size:clamp(1.1rem,1.9vw,1.36rem); line-height:1.67; }
+  .smri-scroll-cue { display:inline-flex; align-items:center; gap:10px; text-decoration:none; color:#1b3977; font-weight:800; padding:12px 16px; border-radius:14px; background:rgba(255,255,255,.52); border:1px solid rgba(255,255,255,.72); backdrop-filter:blur(12px); }
+  .smri-scroll-cue svg { width:18px; fill:none; stroke:currentColor; stroke-width:2; animation:smriBounce 1.8s ease-in-out infinite; }
+  @keyframes smriBounce { 0%,100%{transform:translateY(-1px)}50%{transform:translateY(4px)} }
+  .smri-section { padding:82px 0; scroll-margin-top:96px; }
+  .smri-glass { border:1px solid var(--line); background:linear-gradient(145deg,rgba(255,255,255,.82),rgba(255,255,255,.55)); backdrop-filter:blur(24px) saturate(1.18); box-shadow:var(--shadow); }
+  .smri-workshop-panel { display:grid; grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr); gap:clamp(40px,7vw,88px); padding:clamp(34px,6vw,72px); border-radius:var(--radius-xl); align-items:center; }
+  .smri-kicker { margin-bottom:14px; }
+  .smri-workshop-copy h2,.smri-section-head h2,.smri-book-copy h2 { margin:0 0 20px; font-size:clamp(2.5rem,5vw,4.7rem); }
+  .smri-workshop-copy p,.smri-section-head p,.smri-book-copy p { color:var(--ink-soft); font-size:1.04rem; }
+  .smri-workshop-copy blockquote { margin:28px 0 0; padding:18px 20px; border-left:4px solid #6945c4; border-radius:0 16px 16px 0; background:rgba(95,70,187,.07); color:#253653; font-weight:720; }
+  .smri-outcomes { display:grid; gap:14px; }
+  .smri-outcomes article { display:grid; grid-template-columns:52px 1fr; gap:16px; align-items:center; padding:19px; border-radius:20px; border:1px solid rgba(255,255,255,.75); background:rgba(255,255,255,.55); box-shadow:0 10px 30px rgba(30,47,82,.08); }
+  .smri-outcomes article>span { width:52px; height:52px; display:grid; place-items:center; border-radius:17px; color:white; font-size:.78rem; font-weight:900; letter-spacing:.08em; background:linear-gradient(145deg,#215ee3,#7540bd 67%,#df8a55); }
+  .smri-outcomes h3 { margin:0 0 5px; font-size:1.22rem; }
+  .smri-outcomes p { margin:0; color:var(--ink-soft); line-height:1.45; }
+  .smri-section-head { max-width:800px; margin-bottom:40px; }
+  .smri-section-head p { max-width:690px; margin-bottom:0; }
+  .smri-tool-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .smri-tool-card { display:grid; grid-template-columns:210px minmax(0,1fr); gap:28px; align-items:center; padding:34px; border-radius:var(--radius-xl); overflow:hidden; position:relative; }
+  .smri-tool-card::before { content:""; position:absolute; width:260px; height:260px; border-radius:50%; left:-80px; top:-90px; background:radial-gradient(circle,rgba(105,75,210,.19),transparent 70%); pointer-events:none; }
+  .smri-tool-bubble { position:relative; width:190px; height:190px; display:grid; place-items:center; border-radius:50%; text-decoration:none; transition:transform .28s ease,filter .28s ease; }
+  .smri-tool-bubble:hover { transform:translateY(-6px) scale(1.025); filter:saturate(1.12); }
+  .smri-tool-bubble::before,.smri-tool-bubble::after { content:""; position:absolute; border-radius:50%; inset:-7px; border:1px solid rgba(255,255,255,.7); box-shadow:0 20px 55px rgba(68,47,154,.24),inset 0 0 38px rgba(255,255,255,.27); }
+  .smri-tool-bubble::after { inset:12px; border-color:rgba(255,255,255,.38); }
+  .smri-tool-bubble svg { width:100%; height:100%; position:relative; z-index:1; }
+  .smri-tool-label { font-size:.74rem; text-transform:uppercase; letter-spacing:.14em; font-weight:850; color:#5a4a93; margin-bottom:9px; }
+  .smri-tool-copy h3 { font-size:clamp(1.8rem,3vw,2.7rem); margin:0 0 14px; }
+  .smri-tool-copy p { color:var(--ink-soft); margin-bottom:20px; }
+  .smri-tool-copy small { display:block; margin-top:12px; color:#66718a; line-height:1.45; }
+  .smri-button { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:50px; padding:0 18px; border-radius:15px; font-weight:830; text-decoration:none; transition:transform .2s ease,box-shadow .2s ease; }
+  .smri-button:hover { transform:translateY(-2px); }
+  .smri-button-primary { color:white!important; background:linear-gradient(135deg,#173f98,#5c2da7); box-shadow:0 14px 30px rgba(54,58,160,.24); }
+  .smri-button-secondary { color:white!important; background:linear-gradient(135deg,#7137ad,#c65b8e 60%,#d98757); box-shadow:0 14px 30px rgba(128,55,151,.22); }
+  .smri-book-panel { display:grid; grid-template-columns:minmax(280px,.8fr) minmax(0,1.2fr); gap:clamp(44px,8vw,100px); align-items:center; padding:clamp(34px,6vw,72px); border-radius:var(--radius-xl); }
+  .smri-book-visual { position:relative; min-height:520px; display:grid; place-items:center; perspective:1000px; }
+  .smri-book-visual img { width:min(330px,80vw); height:auto; border-radius:5px 12px 12px 5px; box-shadow:0 32px 70px rgba(31,30,70,.3); transform:rotateY(-7deg) rotateZ(-1deg); position:relative; z-index:2; }
+  .smri-book-shadow { position:absolute; width:290px; height:60px; border-radius:50%; background:rgba(38,30,80,.27); filter:blur(22px); bottom:32px; transform:rotate(-4deg); }
+  .smri-book-copy h3 { margin:-7px 0 20px; color:#8e2931; font-size:clamp(1.2rem,2.1vw,1.62rem); line-height:1.3; letter-spacing:-.02em; }
+  .smri-book-meta { display:flex; flex-wrap:wrap; gap:9px; margin:24px 0 26px; }
+  .smri-book-meta span { padding:7px 11px; border-radius:999px; background:rgba(255,255,255,.65); border:1px solid rgba(255,255,255,.82); color:#3e4f6d; font-size:.78rem; font-weight:760; }
+  .smri-button-row { display:flex; flex-wrap:wrap; gap:16px; align-items:center; }
+  .smri-text-link { font-weight:800; color:#263f7d!important; text-decoration:none; }
+  .smri-team-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .smri-person { overflow:hidden; border-radius:var(--radius-xl); }
+  .smri-person-photo { height:430px; overflow:hidden; }
+  .smri-person-photo img { width:100%; height:100%; object-fit:cover; object-position:center 23%; display:block; transition:transform .6s ease; }
+  .smri-person:hover .smri-person-photo img { transform:scale(1.025); }
+  .smri-person-copy { padding:30px 32px 34px; }
+  .smri-person-copy h3 { margin:0 0 7px; font-size:2rem; }
+  .smri-person-role { color:#5c3b9f; font-weight:820; margin-bottom:15px; }
+  .smri-person-copy p { color:var(--ink-soft); margin-bottom:21px; }
+  .smri-profile-links { display:flex; flex-wrap:wrap; gap:10px; }
+  .smri-profile-links a { display:inline-flex; align-items:center; gap:8px; padding:9px 12px; border-radius:12px; background:rgba(255,255,255,.63); border:1px solid rgba(255,255,255,.8); text-decoration:none; font-size:.85rem; font-weight:780; }
+  .smri-profile-links svg { width:16px; height:16px; fill:currentColor; }
+  .smri-footer { display:flex; justify-content:space-between; gap:20px; padding:38px 0 50px; color:#53617a; font-size:.82rem; }
+  .smri-reveal { opacity:0; transform:translateY(20px); transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1); }
+  .smri-reveal.smri-visible { opacity:1; transform:none; }
+  @media (max-width:980px) {
+    .smri-workshop-panel,.smri-book-panel { grid-template-columns:1fr; }
+    .smri-tool-grid,.smri-team-grid { grid-template-columns:1fr; }
+    .smri-tool-card { grid-template-columns:200px minmax(0,1fr); }
+    .smri-book-visual { min-height:430px; }
+  }
+  @media (max-width:720px) {
+    .smri-shell { width:min(calc(100% - 24px),var(--max)); }
+    .smri-nav-wrap { padding:10px 0; }
+    .smri-nav { min-height:60px; border-radius:18px; }
+    .smri-menu-btn { display:grid; place-items:center; }
+    .smri-nav-links { display:none; position:absolute; top:78px; left:12px; right:12px; flex-direction:column; align-items:stretch; padding:10px; border-radius:17px; background:rgba(255,255,255,.94); box-shadow:0 18px 45px rgba(21,38,77,.2); }
+    .smri-nav-links.smri-open { display:flex; }
+    .smri-nav-links a { padding:12px 14px; }
+    .smri-hero { min-height:690px; padding:88px 0 92px; }
+    .smri-hero h1 { font-size:clamp(3.15rem,16vw,5rem); }
+    .smri-section { padding:58px 0; }
+    .smri-workshop-panel,.smri-book-panel { padding:26px 20px; border-radius:26px; }
+    .smri-tool-card { grid-template-columns:1fr; text-align:center; padding:28px 20px; }
+    .smri-tool-bubble { margin-inline:auto; width:178px; height:178px; }
+    .smri-book-visual { min-height:390px; }
+    .smri-person-photo { height:360px; }
+    .smri-person-copy { padding:25px 22px 28px; }
+    .smri-profile-links { justify-content:flex-start; }
+    .smri-footer { flex-direction:column; padding-bottom:35px; }
+  }
+  @media (prefers-reduced-motion:reduce) {
+    #smri-hub * { scroll-behavior:auto!important; animation:none!important; transition:none!important; }
+    .smri-reveal { opacity:1; transform:none; }
+  }
+</style>
+
+<script>
+(function() {
+  const root=document.getElementById('smri-hub');
+  if(!root) return;
+  const menuBtn=document.getElementById('smriMenuBtn');
+  const navLinks=document.getElementById('smriNavLinks');
+  if(menuBtn&&navLinks) {
+    menuBtn.addEventListener('click',()=>{ const open=navLinks.classList.toggle('smri-open'); menuBtn.setAttribute('aria-expanded',String(open)); });
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ navLinks.classList.remove('smri-open'); menuBtn.setAttribute('aria-expanded','false'); }));
+  }
+  root.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+    const target=root.querySelector(a.getAttribute('href'));
+    if(target) { e.preventDefault(); target.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}); }
+  }));
+  const revealObserver=('IntersectionObserver' in window)?new IntersectionObserver(entries=>entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('smri-visible'); }),{threshold:.11}):null;
+  root.querySelectorAll('.smri-reveal').forEach(el=>{ if(revealObserver) revealObserver.observe(el); else el.classList.add('smri-visible'); });
+  const year=document.getElementById('smriYear'); if(year) year.textContent=new Date().getFullYear();
+
+  const canvas=document.getElementById('smriRippleCanvas');
+  const image=document.getElementById('smriRippleSource');
+  const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!canvas||!image) return;
+  const gl=canvas.getContext('webgl',{alpha:false,antialias:false,powerPreference:'high-performance'});
+  if(!gl) return;
+  const vertex=`attribute vec2 aPosition; varying vec2 vUv; void main(){vUv=aPosition*.5+.5;gl_Position=vec4(aPosition,0.,1.);}`;
+  const fragment=`precision highp float;
+    uniform sampler2D uTexture; uniform vec2 uResolution; uniform vec2 uImageResolution; uniform float uTime; varying vec2 vUv;
+    vec2 coverUv(vec2 uv){
+      float screenRatio=uResolution.x/uResolution.y; float imageRatio=uImageResolution.x/uImageResolution.y; vec2 scale=vec2(1.0);
+      if(screenRatio>imageRatio) scale.y=imageRatio/screenRatio; else scale.x=screenRatio/imageRatio;
+      return (uv-.5)*scale+.5;
+    }
+    void main(){
+      vec2 uv=vUv; float aspect=uResolution.x/uResolution.y; vec2 center=vec2(.5,.67); vec2 p=uv-center; p.x*=aspect;
+      float d=length(p); vec2 direction=p/max(d,.0001); direction.x/=aspect;
+      float waveA=sin(d*92.0-uTime*3.9); float waveB=sin(d*51.0-uTime*2.15+.9); float waveC=sin(d*138.0-uTime*5.2)*.18;
+      float falloff=exp(-d*1.55)*smoothstep(.018,.07,d); float amplitude=.0062*falloff;
+      vec2 liquid=vec2(sin(uv.y*18.0+uTime*.35)+sin(uv.y*7.0-uTime*.22),cos(uv.x*16.0-uTime*.28))*.00055;
+      vec2 warped=uv+direction*(waveA*.58+waveB*.28+waveC)*amplitude+liquid;
+      vec2 tuv=clamp(coverUv(warped),vec2(.001),vec2(.999)); vec4 color=texture2D(uTexture,tuv);
+      color.rgb=mix(color.rgb,vec3(1.0),.025); gl_FragColor=color;
+    }`;
+  function shader(type,source){ const s=gl.createShader(type); gl.shaderSource(s,source); gl.compileShader(s); if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s)); return s; }
+  let program;
+  try { program=gl.createProgram(); gl.attachShader(program,shader(gl.VERTEX_SHADER,vertex)); gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fragment)); gl.linkProgram(program); if(!gl.getProgramParameter(program,gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(program)); } catch(e) { console.warn('Ripple background fallback used.',e); return; }
+  gl.useProgram(program);
+  const buffer=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,buffer); gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
+  const position=gl.getAttribLocation(program,'aPosition'); gl.enableVertexAttribArray(position); gl.vertexAttribPointer(position,2,gl.FLOAT,false,0,0);
+  const texture=gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D,texture); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR); gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);
+  const uResolution=gl.getUniformLocation(program,'uResolution'),uImageResolution=gl.getUniformLocation(program,'uImageResolution'),uTime=gl.getUniformLocation(program,'uTime');
+  function resize(){ const dpr=Math.min(window.devicePixelRatio||1,1.6); const w=Math.max(1,Math.floor(innerWidth*dpr)),h=Math.max(1,Math.floor(innerHeight*dpr)); if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;gl.viewport(0,0,w,h);} gl.uniform2f(uResolution,w,h); }
+  function begin(){ gl.bindTexture(gl.TEXTURE_2D,texture); gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image); gl.uniform2f(uImageResolution,image.naturalWidth,image.naturalHeight); resize(); canvas.classList.add('smri-ready'); let start=performance.now();
+    function render(now){ resize(); gl.uniform1f(uTime,reduceMotion?0:(now-start)/1000); gl.drawArrays(gl.TRIANGLES,0,6); if(!reduceMotion) requestAnimationFrame(render); } requestAnimationFrame(render);
+  }
+  if(image.complete&&image.naturalWidth) begin(); else image.addEventListener('load',begin,{once:true});
+  addEventListener('resize',resize,{passive:true});
+})();
+</script>
+</body>
+</html>
