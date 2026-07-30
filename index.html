@@ -62,8 +62,8 @@
         <h1>Make your research create <em>the right ripples.</em></h1>
         <p>A companion resource hub for researchers who want to use social media purposefully, ethically, and sustainably. Clarify your strategy, shape your public presence, and turn research into meaningful connection and impact.</p>
         <div class="smri-hero-actions">
-          <a class="smri-button smri-button-light" href="#smri-workshop">Explore the workshop <span>↓</span></a>
-          <a class="smri-button smri-button-ghost" href="https://compass.marcelbogers.com/" target="_blank" rel="noopener">Open the Compass Canvas <span>↗</span></a>
+          <a class="smri-button smri-button-hero" href="#smri-workshop">Explore the workshop <span>↓</span></a>
+          <a class="smri-button smri-button-hero" href="#smri-tools">Explore the tools <span>↓</span></a>
         </div>
         <div class="smri-principles" aria-label="Resource Hub principles">
           <span>Purposeful</span><i></i><span>Ethical</span><i></i><span>Sustainable</span>
@@ -260,7 +260,7 @@
   .smri-eyebrow span{width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--violet),var(--pink));box-shadow:0 0 0 5px rgba(141,89,255,.16),0 0 20px rgba(241,92,170,.65)}
   .smri-hero h1{margin:0;font-size:clamp(3.7rem,8.5vw,8rem);font-weight:900;max-width:1080px;text-shadow:0 18px 60px rgba(0,0,0,.22)}
   .smri-hero h1 em{font-style:normal;background:linear-gradient(100deg,#7ED3FF 3%,#A47AFF 34%,#F26BB1 61%,#FF8D6E 80%,#FFD27D 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 10px 28px rgba(122,82,242,.18))}
-  .smri-hero p{max-width:850px;margin:30px auto 32px;color:#d1d6e8;font-size:clamp(1.1rem,1.9vw,1.38rem);line-height:1.67;text-shadow:0 4px 24px rgba(0,0,0,.25)}
+  .smri-hero p{max-width:850px;margin:46px auto 34px;color:#d1d6e8;font-size:clamp(1.1rem,1.9vw,1.38rem);line-height:1.67;text-shadow:0 4px 24px rgba(0,0,0,.25)}
   .smri-hero-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
   .smri-principles{margin-top:32px;display:flex;justify-content:center;align-items:center;gap:11px;color:#aeb7d0;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
   .smri-principles i{width:4px;height:4px;border-radius:50%;background:linear-gradient(135deg,var(--violet),var(--amber));box-shadow:0 0 12px rgba(241,92,170,.7)}
@@ -301,10 +301,8 @@
 
   .smri-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:51px;padding:0 19px;border-radius:15px;font-weight:830;text-decoration:none;transition:transform .22s ease,box-shadow .22s ease,background .22s ease;border:1px solid transparent}
   .smri-button:hover{transform:translateY(-2px)}
-  .smri-button-light{color:#111932!important;background:#fff;box-shadow:0 16px 40px rgba(0,0,0,.2)}
-  .smri-button-light:hover{box-shadow:0 20px 48px rgba(0,0,0,.28)}
-  .smri-button-ghost{color:#fff!important;background:rgba(9,16,42,.34);border-color:rgba(255,255,255,.2);backdrop-filter:blur(14px)}
-  .smri-button-ghost:hover{background:rgba(255,255,255,.09)}
+  .smri-button-hero{color:#fff!important;background:transparent;border-color:rgba(255,255,255,.28);box-shadow:none;backdrop-filter:blur(10px)}
+  .smri-button-hero:hover,.smri-button-hero:focus-visible{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.42);box-shadow:0 16px 38px rgba(0,0,0,.18);outline:none}
   .smri-button-primary{color:#fff!important;background:linear-gradient(135deg,#176FC4,#6846D9 62%,#B949A6);box-shadow:0 15px 34px rgba(59,56,180,.3)}
   .smri-button-secondary{color:#fff!important;background:linear-gradient(135deg,#6639B3,#C94B9E 58%,#E17857);box-shadow:0 15px 34px rgba(136,48,139,.28)}
 
@@ -325,10 +323,10 @@
 
   .smri-team-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
   .smri-person{overflow:hidden;border-radius:var(--radius-xl)}
-  .smri-person-photo{height:430px;overflow:hidden;position:relative}
+  .smri-person-photo{height:500px;overflow:hidden;position:relative}
   .smri-person-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(7,13,35,.72));pointer-events:none}
-  .smri-person-photo img{width:100%;height:100%;object-fit:cover;object-position:center 23%;display:block;transition:transform .65s ease,filter .65s ease;filter:saturate(.95) contrast(1.03)}
-  .smri-person:hover .smri-person-photo img{transform:scale(1.035);filter:saturate(1.04) contrast(1.04)}
+  .smri-person-photo img{width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block;transition:transform .65s ease,filter .65s ease;filter:saturate(.95) contrast(1.03)}
+  .smri-person:hover .smri-person-photo img{transform:scale(1.018);filter:saturate(1.04) contrast(1.04)}
   .smri-person-copy{padding:30px 32px 34px}
   .smri-person-copy h3{margin:0 0 7px;font-size:2rem}
   .smri-person-role{color:#b7a2ff;font-weight:820;margin-bottom:15px}
@@ -346,6 +344,8 @@
     .smri-workshop-panel,.smri-book-panel{grid-template-columns:1fr}
     .smri-tool-grid,.smri-team-grid{grid-template-columns:1fr}
     .smri-tool-card{grid-template-columns:200px minmax(0,1fr)}
+    .smri-person{display:grid;grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr)}
+    .smri-person-photo{height:100%;min-height:500px}
     .smri-book-visual{min-height:430px}
   }
   @media (max-width:720px){
@@ -365,7 +365,8 @@
     .smri-tool-card{grid-template-columns:1fr;text-align:center;padding:29px 20px}
     .smri-tool-bubble{margin-inline:auto;width:178px;height:178px}
     .smri-book-visual{min-height:390px}
-    .smri-person-photo{height:360px}
+    .smri-person{display:block}
+    .smri-person-photo{height:430px;min-height:0}
     .smri-person-copy{padding:25px 22px 28px}
     .smri-profile-links{justify-content:flex-start}
     .smri-footer{flex-direction:column;padding-bottom:36px}
